@@ -35,7 +35,7 @@ class nav extends Component {
             </span>
             </li>
           <li>
-            <img src={this.props.thumbnail} />
+            <img alt={this.props.name} src={this.props.thumbnail} />
             <span>
               <FontAwesomeIcon
             icon="caret-down"/>

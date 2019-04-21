@@ -29,7 +29,7 @@ class Main extends Component {
         </ul>
         <ul className="repo">
           {this.props.repos.map(item => (
-            <li>
+            <li key={item.id}>
               <h3>
                 <Link to={item.html_url}>{item.name}</Link></h3> <div className={item.language}></div><span>{item.language}</span> Updated <Moment format="MMMDD">{item.updated_at}</Moment>
             </li>
