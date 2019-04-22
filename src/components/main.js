@@ -14,7 +14,7 @@ class Main extends Component {
       <div className="main">
         <ul className="overview">
           <li>Overview</li>
-          <li>Repositories</li>
+          <li className="active">Repositories</li>
           <li>Projects</li>
           <li>Stars</li>
           <li>Followers</li>
