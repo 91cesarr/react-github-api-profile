@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 import { getRepo } from "../actions/action";
 import Moment from "react-moment";
@@ -31,7 +30,7 @@ class Main extends Component {
           {this.props.repos.map(item => (
             <li key={item.id}>
               <h3>
-                <Link to={item.html_url}>{item.name}</Link></h3> <div className={item.language}></div><span>{item.language}</span> Updated <Moment format="MMMDD">{item.updated_at}</Moment>
+                <a href={item.html_url}>{item.name}</a></h3> <div className={item.language}></div><span>{item.language}</span> Updated <Moment format="MMMDD">{item.updated_at}</Moment>
             </li>
           ))}
         </ul>

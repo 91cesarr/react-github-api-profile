@@ -78,7 +78,7 @@ input::placeholder {
   color: white;
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .nav-left {
   display: flex;
@@ -192,9 +192,18 @@ input::placeholder {
     text-decoration: none;
 }
 .repo li {
-  padding: 24px 0;
-  border-bottom: 1px solid #e1e4e8;
+  padding: 12px 0 24px 0;
+  border-top: 1px solid #e1e4e8;
+  font-size: 12px;
+  color:#586069;
 }
+.repo span {
+  margin-right:22px;
+}
+.repo h3 {
+  font-size: 20px;
+}
+
 .repo .JavaScript {
   background:#f1e05a;
   width:12px;
